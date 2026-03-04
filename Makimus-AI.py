@@ -2146,7 +2146,7 @@ class ImageSearchApp:
             self.is_indexing = False
             self.is_stopping = False
             safe_print("[VSCAN] Video index is up to date.")
-            self._safe_after(0, lambda: self.update_status("Video index up to date", "green"))
+            self._safe_after(0, lambda: self.update_status("Up to date", "green"))
             self._safe_after(0, self.update_stats)
 
     def _flush_pending_batches(self):
